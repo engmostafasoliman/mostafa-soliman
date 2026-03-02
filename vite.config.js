@@ -6,6 +6,11 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: "/Portfolio/",
   logLevel: 'error', // Suppress warnings, only show errors
+  server: {
+    port: parseInt(process.env.PORT) || 5173,
+    host: '127.0.0.1',
+    strictPort: false,
+  },
   plugins: [
     base44({
       // Support for legacy code that imports the base44 SDK with @/integrations, @/entities, etc.
