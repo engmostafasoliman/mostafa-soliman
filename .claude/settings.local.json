@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm install)",
+      "Bash(ls /e/frontend/portfolio/node_modules/.bin/vite*)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill /PID 10924 /F)",
+      "Bash(taskkill /PID 14356 /F)",
+      "Bash(cmd /c \"taskkill /PID 10924 /F\")",
+      "Bash(cmd /c \"taskkill /PID 14356 /F\")",
+      "Bash(cmd /c \"taskkill /F /PID 10924 & taskkill /F /PID 14356\")",
+      "Bash(cmd /c \"wmic process where ProcessId=10924 delete 2>nul & wmic process where ProcessId=14356 delete 2>nul & echo done\")",
+      "Bash(cmd /c \"taskkill /F /PID 10924\")",
+      "Bash(cmd /c \"taskkill /F /PID 14356\")",
+      "WebFetch(domain:apps.apple.com)",
+      "WebFetch(domain:itunes.apple.com)",
+      "Bash(xargs ls -lt)",
+      "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\Administrator\\\\Downloads'', ''C:\\\\Users\\\\Administrator\\\\Desktop'', ''C:\\\\Users\\\\Administrator\\\\Pictures'' -Include ''*.png'',''*.jpg'',''*.jpeg'' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 10 FullName, LastWriteTime\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\Administrator'' -Include ''*.png'',''*.jpg'',''*.jpeg'' -Recurse -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -gt \\(Get-Date\\).AddDays\\(-7\\) } | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime, Length\")"
+    ]
+  }
+}
