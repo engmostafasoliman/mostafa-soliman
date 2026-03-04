@@ -17,7 +17,8 @@
       "WebFetch(domain:itunes.apple.com)",
       "Bash(xargs ls -lt)",
       "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\Administrator\\\\Downloads'', ''C:\\\\Users\\\\Administrator\\\\Desktop'', ''C:\\\\Users\\\\Administrator\\\\Pictures'' -Include ''*.png'',''*.jpg'',''*.jpeg'' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 10 FullName, LastWriteTime\")",
-      "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\Administrator'' -Include ''*.png'',''*.jpg'',''*.jpeg'' -Recurse -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -gt \\(Get-Date\\).AddDays\\(-7\\) } | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime, Length\")"
+      "Bash(powershell.exe -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\Administrator'' -Include ''*.png'',''*.jpg'',''*.jpeg'' -Recurse -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -gt \\(Get-Date\\).AddDays\\(-7\\) } | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime, Length\")",
+      "Bash(npm install @emailjs/browser)"
     ]
   }
 }

@@ -1,11 +1,21 @@
 import React from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { base44 } from "@/api/base44Client";
-import { Mail, Github, Linkedin, Phone, Send, CheckCircle2 } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import { Mail, Github, Linkedin, Phone, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { profile } from "./data";
+
+// ─── EmailJS credentials ────────────────────────────────────────────────────
+// 1. Sign up at https://www.emailjs.com (free)
+// 2. Add a Gmail service → copy its Service ID below
+// 3. Create an email template with variables: {{from_name}}, {{from_email}}, {{message}}
+//    → copy its Template ID below
+// 4. Account → API Keys → copy your Public Key below
+const EMAILJS_SERVICE_ID  = "service_1qbugpp";
+const EMAILJS_TEMPLATE_ID = "template_tdehk8e";
+const EMAILJS_PUBLIC_KEY  = "5cgnGBsSntvRMGuAT";
+// ────────────────────────────────────────────────────────────────────────────
 
 const contactLinks = [
   { icon: Mail,     label: "Email",    value: profile.email,          href: `mailto:${profile.email}` },
@@ -17,30 +27,34 @@ const contactLinks = [
 export default function ContactSection() {
   const [loading, setLoading] = React.useState(false);
   const [sent, setSent]       = React.useState(false);
+  const [error, setError]     = React.useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
     const formEl = e.currentTarget;
     const form   = new FormData(formEl);
-    const name    = form.get("name");
-    const email   = form.get("email");
-    const message = form.get("message");
 
-    await base44.entities.ContactMessage.create({ name, email, message });
-
-    if (await base44.auth.isAuthenticated()) {
-      const me = await base44.auth.me();
-      await base44.integrations.Core.SendEmail({
-        to: me.email,
-        subject: `New contact message from ${name}`,
-        body: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
-      });
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          to_email:   profile.email,
+          from_name:  form.get("name"),
+          from_email: form.get("email"),
+          message:    form.get("message"),
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      setSent(true);
+      formEl.reset();
+    } catch (err) {
+      setError("Failed to send. Please email me directly at " + profile.email);
+    } finally {
+      setLoading(false);
     }
-
-    setSent(true);
-    setLoading(false);
-    formEl?.reset();
   };
 
   return (
@@ -111,6 +125,12 @@ export default function ContactSection() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {error && (
+                  <div className="flex items-start gap-2 p-3 rounded-xl bg-red-950/40 border border-red-500/30 text-red-400 text-sm">
+                    <AlertCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    {error}
+                  </div>
+                )}
                 <Input
                   name="name"
                   placeholder="Your name"
