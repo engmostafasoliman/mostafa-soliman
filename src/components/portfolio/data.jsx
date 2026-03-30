@@ -35,7 +35,7 @@ export const projects = [
       "Production-grade SEO: JSON-LD schema, hreflang, sitemap, canonical URLs",
       "Fully responsive across mobile, tablet, and desktop"
     ],
-    technologies: ["Next.js 15", "React", "SEO", "Tailwind CSS"],
+    technologies: ["Next.js 15", "React", "SEO", "Tailwind CSS", "Claude Code"],
     links: {
       appStore: "",
       playStore: "",
@@ -63,7 +63,7 @@ export const projects = [
       "Demonstrated a full AI-assisted workflow: ChatGPT → Figma Make → Antigravity → Play Store",
       "Proved that structured AI prompting with clear rules produces maintainable, extendable code"
     ],
-    technologies: ["Flutter", "Vibe Coding", "Figma", "ChatGPT", "Antigravity", "Claude Sonnet"],
+    technologies: ["Flutter", "Figma", "Antigravity", "Claude Sonnet"],
     links: {
       appStore: "",
       playStore: "https://play.google.com/store/apps/details?id=com.qrapp.qrapp",
@@ -117,7 +117,7 @@ export const projects = [
       "Highly responsive and smooth drawing experience at 60 FPS",
       "Persistent canvas — drawings survive app restarts with near-instant load times"
     ],
-    technologies: ["Flutter", "Riverpod", "CustomPainter", "GestureDetector", "Hive", "MVVM", "Android Intent"],
+    technologies: ["Flutter", "Riverpod", "CustomPainter", "Hive", "MVVM", "Android Intent"],
     links: {
       appStore: "",
       playStore: "",
