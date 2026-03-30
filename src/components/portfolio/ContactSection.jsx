@@ -2,7 +2,7 @@ import React from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
-import { Mail, Github, Linkedin, Phone, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Mail, Github, Linkedin, Phone, Send, CheckCircle2, AlertCircle, Youtube, Code2, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { profile } from "./data";
 
@@ -22,6 +22,9 @@ const contactLinks = [
   { icon: Phone,    label: "Phone",    value: profile.phone,          href: `tel:${profile.phone}` },
   { icon: Github,   label: "GitHub",   value: "engmostafasoliman",    href: profile.links.github },
   { icon: Linkedin, label: "LinkedIn", value: "mostafa-elsayed",      href: profile.links.linkedin },
+  { icon: Youtube,  label: "YouTube",  value: "Code Mind Official",   href: profile.links.youtube },
+  { icon: Code2,        label: "Codewars",  value: "Problem Solving",    href: profile.links.codewars },
+  { icon: MessageCircle, label: "WhatsApp", value: "Chat on WhatsApp",  href: profile.links.whatsapp },
 ];
 
 export default function ContactSection() {

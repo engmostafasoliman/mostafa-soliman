@@ -1,6 +1,6 @@
 import React from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { ExternalLink, FileText, Github, Smartphone } from "lucide-react";
+import { ExternalLink, FileText, Github, Smartphone, Globe } from "lucide-react";
 
 export default function ProjectModal({ open, onOpenChange, project }) {
   if (!project) return null;
@@ -90,8 +90,11 @@ export default function ProjectModal({ open, onOpenChange, project }) {
           </Section>
 
           {/* Links */}
-          {(links.appStore || links.playStore || links.pdf || links.github) && (
+          {(links.appStore || links.playStore || links.pdf || links.github || links.website) && (
             <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-800">
+              {links.website && (
+                <LinkButton href={links.website} icon={Globe} label="Live Site" />
+              )}
               {links.appStore && (
                 <LinkButton href={links.appStore} icon={Smartphone} label="App Store" />
               )}
