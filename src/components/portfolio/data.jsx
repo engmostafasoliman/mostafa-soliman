@@ -3,7 +3,7 @@ export const profile = {
   role: "Flutter Developer",
   location: "Abu Dhabi, UAE",
   email: "devmostafasoliman@gmail.com",
-  phone: "0554663783",
+  phone: "+971554663783",
   photo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/b07be15c0_1764270459438.jpeg",
   links: {
     codewars: "https://www.codewars.com/users/mostafaelsayed2262001",
