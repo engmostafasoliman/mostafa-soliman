@@ -63,7 +63,7 @@ export const projects = [
       "Demonstrated a full AI-assisted workflow: ChatGPT → Figma Make → Antigravity → Play Store",
       "Proved that structured AI prompting with clear rules produces maintainable, extendable code"
     ],
-    technologies: ["Flutter", "Figma", "Antigravity", "Claude Sonnet"],
+    technologies: ["Flutter", "Figma", "Antigravity", "Claude Code"],
     links: {
       appStore: "",
       playStore: "https://play.google.com/store/apps/details?id=com.qrapp.qrapp",
@@ -274,12 +274,11 @@ export const experience = [
     location: "Abu Dhabi, UAE",
     period: "Jan 2025 – Present",
     bullets: [
-      "Custom Graphics Engine: Engineered a high-performance freehand drawing module using CustomPainter and Canvas API, achieving 60 FPS rendering through optimized path-simplification algorithms.",
-      "Advanced Gesture Processing: Implemented ultra-responsive gesture detection and smoothing logic to eliminate input lag, managed via Riverpod for efficient state rebuilding.",
-      "Persistent Canvas Data: Integrated Hive NoSQL to serialize and store complex vector paths locally, allowing users to save and resume large-scale drawings with near-instant load times.",
-      "Embedded Android Deployment: Led development of a Flutter-based interface for 20+ EV charging stations, ensuring 24/7 reliability on custom hardware.",
-      "Secure Transactions: Integrated Payment Gateways and webhooks to handle real-time session billing and hardware-triggered payments.",
-      "Spatial & Smart Systems: Built station-discovery features using Google Maps SDK and incorporated AI-powered predictive modeling to analyze station usage and suggest optimal charging times."
+      "EV Charging Platform (Easy Touch): Shipped a production app on App Store & Play Store enabling EV drivers to locate chargers via Google Maps, manage live sessions over WebSocket/OCPP, and pay securely — with unit test coverage on Cubit state transitions and OCPP handlers using Mockito and bloc_test.",
+      "Embedded Android Deployment: Led Flutter-based interface development for 20+ EV charging stations, ensuring 24/7 reliability on custom hardware with real-time payment webhooks.",
+      "WhiteBoard App: Built a high-performance digital whiteboard using CustomPainter and Canvas API at 60 FPS, with Riverpod state management and Hive-powered persistent vector path storage for near-instant save and load.",
+      "Web Development with AI: Delivered the Future Gulf Carpets website (futuregulf.ae) — a bilingual AR/EN Next.js 15 static site with full SEO, built using Claude Code as the primary AI development tool.",
+      "Vibe Coding Workflow: Rebuilt the Quarak QR Code app from scratch using an AI-assisted pipeline — Figma Make for UI generation, Antigravity (Claude Code) for implementation — replacing the old Play Store listing with a modern, polished app."
     ]
   },
   {
