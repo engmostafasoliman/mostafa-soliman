@@ -6,13 +6,71 @@ export const profile = {
   phone: "0554663783",
   photo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/b07be15c0_1764270459438.jpeg",
   links: {
-    codewars: "",
+    codewars: "https://www.codewars.com/users/mostafaelsayed2262001",
     linkedin: "https://www.linkedin.com/in/mostafa-elsayed-690148195/",
-    github: "https://github.com/engmostafasoliman/engmostafasoliman"
+    github: "https://github.com/engmostafasoliman/engmostafasoliman",
+    youtube: "https://www.youtube.com/@Code-Mind-Official",
+    whatsapp: "https://wa.me/message/D4GWZCFLDX4TE1"
   }
 };
 
 export const projects = [
+  {
+    id: "future-gulf-carpets",
+    title: "Future Gulf Carpets",
+    summary: "Blazing-fast bilingual website (AR/EN) with RTL support, interactive gallery, and full SEO for a 25+ year UAE flooring brand.",
+    description: "The official digital home of Future Gulf Carpets — a leading UAE flooring solutions provider with over 25 years of craftsmanship. Built as a blazing-fast static site using Next.js 15 App Router with full Arabic/English bilingual support, RTL layout, and an interactive project gallery showcasing Mosques, Schools, Commercial, and Custom flooring projects. Deployed on cPanel via static export.",
+    problem: "Future Gulf Carpets lacked an online presence that matched their 25+ years of legacy and premium craftsmanship — losing potential clients who expect a professional digital experience.",
+    solution: "A fully static Next.js 15 site with Arabic/English i18n, RTL support, and structured SEO (JSON-LD LocalBusiness schema, hreflang, sitemap, canonical URLs) — giving the brand a fast, discoverable, and professional web presence serving the entire UAE.",
+    challenges: [
+      "Implementing seamless RTL/LTR layout switching for full Arabic/English bilingual experience",
+      "Optimizing performance for a fully static export deployed on cPanel (no Node.js server)",
+      "Building an interactive project gallery across multiple categories (Mosques, Schools, Commercial, Custom)",
+      "Implementing complete SEO stack: JSON-LD LocalBusiness schema, hreflang, sitemap, and canonical URLs"
+    ],
+    achievements: [
+      "Live at futuregulf.ae — fully static Next.js 15 site with App Router",
+      "Full Arabic/English bilingual experience with RTL support",
+      "Interactive multi-category project gallery (Mosques, Schools, Commercial, Custom)",
+      "Production-grade SEO: JSON-LD schema, hreflang, sitemap, canonical URLs",
+      "Fully responsive across mobile, tablet, and desktop"
+    ],
+    technologies: ["Next.js 15", "React", "SEO", "Tailwind CSS"],
+    links: {
+      appStore: "",
+      playStore: "",
+      github: "",
+      website: "https://futuregulf.ae/en/"
+    },
+    image: "/Portfolio/images/fgc.jpg"
+  },
+  {
+    id: "quarak-qr",
+    title: "Quarak — QR Code App",
+    summary: "A full redesign and rebuild of a QR code app using Vibe Coding — from outdated MVP to AI-crafted production release on Google Play.",
+    description: "Quarak started as a basic QR code utility on the Play Store — functional but visually outdated. I rebuilt it from scratch using Vibe Coding: brainstorming UI concepts with ChatGPT, generating designs in Figma Make from AI prompts, then feeding screenshots and URLs into the Antigravity AI agent (Claude Sonnet). By 'explaining' the full concept to the agent and setting strict rules and architecture guidelines upfront, the agent transformed silent Figma designs into a real, working Flutter app at remarkable speed. The result replaced the original store listing entirely.",
+    problem: "The original QR app was outdated, lifeless, and lacked the features and polish expected of a modern utility app — needing a full redesign and rebuild.",
+    solution: "Used a structured Vibe Coding workflow: ChatGPT for concept brainstorming → Figma Make for AI-generated UI → Antigravity (Claude Sonnet) for full app generation with enforced architecture rules to keep the output maintainable and production-ready.",
+    challenges: [
+      "Crafting effective AI prompts that produced usable, consistent Figma designs",
+      "Communicating the full app concept to an AI agent in a structured, programmer-like way",
+      "Setting up rules and architecture constraints so the generated code remained maintainable",
+      "Validating and refining AI-generated code to match design intent exactly"
+    ],
+    achievements: [
+      "Rebuilt and shipped a production app to Google Play entirely via Vibe Coding",
+      "Replaced the original store listing with a modern, polished redesign",
+      "Demonstrated a full AI-assisted workflow: ChatGPT → Figma Make → Antigravity → Play Store",
+      "Proved that structured AI prompting with clear rules produces maintainable, extendable code"
+    ],
+    technologies: ["Flutter", "Vibe Coding", "Figma", "ChatGPT", "Antigravity", "Claude Sonnet"],
+    links: {
+      appStore: "",
+      playStore: "https://play.google.com/store/apps/details?id=com.qrapp.qrapp",
+      github: ""
+    },
+    image: "/Portfolio/images/quarak.jpg"
+  },
   {
     id: "easy-touch-ev",
     title: "Easy Touch EV Charger",

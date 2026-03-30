@@ -41,7 +41,7 @@ export default function ProjectCard({ project, onOpen }) {
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent" />
 
-        {/* Store / PDF badges */}
+        {/* Store / PDF / Website badges */}
         <div className="absolute top-3 left-3 flex gap-1.5">
           {project.links?.appStore && (
             <span className="flex items-center gap-1 text-[10px] font-medium px-2 py-0.5 rounded-full bg-slate-950/80 border border-slate-700 text-slate-300">
@@ -56,6 +56,11 @@ export default function ProjectCard({ project, onOpen }) {
           {hasPdf && !hasStore && (
             <span className="flex items-center gap-1 text-[10px] font-medium px-2 py-0.5 rounded-full bg-slate-950/80 border border-slate-700 text-slate-300">
               <FileText className="w-2.5 h-2.5" /> Case Study
+            </span>
+          )}
+          {project.links?.website && !hasStore && (
+            <span className="flex items-center gap-1 text-[10px] font-medium px-2 py-0.5 rounded-full bg-slate-950/80 border border-slate-700 text-slate-300">
+              <ExternalLink className="w-2.5 h-2.5" /> Live Site
             </span>
           )}
         </div>
@@ -94,7 +99,7 @@ export default function ProjectCard({ project, onOpen }) {
         </div>
 
         {/* Links row */}
-        {(project.links?.appStore || project.links?.playStore || project.links?.pdf) && (
+        {(project.links?.appStore || project.links?.playStore || project.links?.pdf || project.links?.website) && (
           <div
             className="mt-4 flex gap-2 pt-4 border-t border-slate-800"
             onClick={(e) => e.stopPropagation()}
@@ -127,6 +132,16 @@ export default function ProjectCard({ project, onOpen }) {
                 className="flex items-center gap-1 text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
               >
                 <FileText className="w-3 h-3" /> Case Study
+              </a>
+            )}
+            {project.links.website && (
+              <a
+                href={project.links.website}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-1 text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
+              >
+                <ExternalLink className="w-3 h-3" /> Live Site
               </a>
             )}
           </div>

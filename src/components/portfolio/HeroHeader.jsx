@@ -1,11 +1,12 @@
 import React from "react";
-import { Mail, MapPin, Phone, Github, Linkedin, Download, ChevronDown } from "lucide-react";
+import { Mail, MapPin, Phone, Github, Linkedin, Download, ChevronDown, Youtube, MessageCircle, Code2 } from "lucide-react";
 import { motion } from "framer-motion";
+import { projects } from "./data";
 
 const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "7+", label: "Apps Delivered" },
-  { value: "2", label: "Production Apps" },
+  { value: `${projects.length}`, label: "Apps Delivered" },
+  { value: "5", label: "Production Apps" },
 ];
 
 export default function HeroHeader({ profile }) {
@@ -61,7 +62,9 @@ export default function HeroHeader({ profile }) {
               <span className="text-indigo-300 font-medium">Bloc, Riverpod, GetX</span> &amp; Clean
               Architecture for{" "}
               <span className="text-slate-200 font-medium">scalable, high-performance</span> mobile
-              experiences.
+              experiences. Actively integrates AI into daily development using{" "}
+              <span className="text-indigo-300 font-medium">Claude, Cursor, Base44 &amp; Antigravity</span>{" "}
+              to ship faster and smarter.
             </p>
 
             {/* Stats */}
@@ -122,6 +125,30 @@ export default function HeroHeader({ profile }) {
                   <button className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-slate-700 hover:border-indigo-500/60 text-slate-300 hover:text-white font-medium transition-all duration-200 hover:-translate-y-0.5 bg-slate-900/50">
                     <Linkedin className="w-4 h-4" />
                     LinkedIn
+                  </button>
+                </a>
+              )}
+              {profile.links.youtube && (
+                <a href={profile.links.youtube} target="_blank" rel="noreferrer">
+                  <button className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-slate-700 hover:border-red-500/60 text-slate-300 hover:text-white font-medium transition-all duration-200 hover:-translate-y-0.5 bg-slate-900/50">
+                    <Youtube className="w-4 h-4" />
+                    YouTube
+                  </button>
+                </a>
+              )}
+              {profile.links.whatsapp && (
+                <a href={profile.links.whatsapp} target="_blank" rel="noreferrer">
+                  <button className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-slate-700 hover:border-green-500/60 text-slate-300 hover:text-white font-medium transition-all duration-200 hover:-translate-y-0.5 bg-slate-900/50">
+                    <MessageCircle className="w-4 h-4" />
+                    WhatsApp
+                  </button>
+                </a>
+              )}
+              {profile.links.codewars && (
+                <a href={profile.links.codewars} target="_blank" rel="noreferrer">
+                  <button className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-slate-700 hover:border-indigo-500/60 text-slate-300 hover:text-white font-medium transition-all duration-200 hover:-translate-y-0.5 bg-slate-900/50">
+                    <Code2 className="w-4 h-4" />
+                    Codewars
                   </button>
                 </a>
               )}
