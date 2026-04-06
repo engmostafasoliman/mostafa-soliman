@@ -231,7 +231,7 @@ export const projects = [
       appStore: "",
       playStore: "",
       github: "",
-      pdf: "https://drive.google.com/file/d/1oCkCAsF7uV3RaIO5t96FcD2J0d850Ig8/view?usp=sharing"
+      pdf: "https://drive.google.com/file/d/1oCkCAsF7uV3RaIO5t96FcD2J0d850Ig8/view?usp=drive_link"
     },
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/4a0203744_BlueModernMobileApplicationPresentation.jpg",
     images: [
@@ -261,7 +261,7 @@ export const projects = [
       appStore: "",
       playStore: "",
       github: "",
-      pdf: ""
+      pdf: "https://drive.google.com/file/d/1VEQxDdtY6F90oiD2ly9A65AK4_YZouAt/view?usp=drive_link"
     },
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/46ce8667b_BlueModernMobileApplicationPresentation-2.jpg"
   }
@@ -269,16 +269,17 @@ export const projects = [
 
 export const experience = [
   {
-    role: "Mid-Level Mobile App Developer",
+    role: "Flutter Engineer — Mid-Level",
     company: "Al Manarah Holding Group",
     location: "Abu Dhabi, UAE",
     period: "Jan 2025 – Present",
     bullets: [
-      "EV Charging Platform (Easy Touch): Shipped a production app on App Store & Play Store enabling EV drivers to locate chargers via Google Maps, manage live sessions over WebSocket/OCPP, and pay securely — with unit test coverage on Cubit state transitions and OCPP handlers using Mockito and bloc_test.",
-      "Embedded Android Deployment: Led Flutter-based interface development for 20+ EV charging stations, ensuring 24/7 reliability on custom hardware with real-time payment webhooks.",
-      "WhiteBoard App: Built a high-performance digital whiteboard using CustomPainter and Canvas API at 60 FPS, with Riverpod state management and Hive-powered persistent vector path storage for near-instant save and load.",
-      "Web Development with AI: Delivered the Future Gulf Carpets website (futuregulf.ae) — a bilingual AR/EN Next.js 15 static site with full SEO, built using Claude Code as the primary AI development tool.",
-      "Vibe Coding Workflow: Rebuilt the Quarak QR Code app from scratch using an AI-assisted pipeline — Figma Make for UI generation, Antigravity (Claude Code) for implementation — replacing the old Play Store listing with a modern, polished app."
+      "EV Charging Platform (Easy Touch): Shipped production app on App Store & Play Store — EV drivers locate chargers via Google Maps, manage live sessions over WebSocket/OCPP, and pay securely. Covered Cubit state transitions and OCPP handlers with unit tests using Mockito and bloc_test.",
+      "Embedded Android Deployment: Led Flutter interface development for 20+ EV charging kiosks across Abu Dhabi, ensuring 24/7 reliability on custom hardware with real-time payment webhooks.",
+      "WhiteBoard App: Built high-performance digital whiteboard using CustomPainter and Canvas API at 60 FPS, with Riverpod state management and Hive-powered persistent vector path storage for near-instant save and load.",
+      "Quarak QR Code App: Rebuilt legacy QR app from scratch using AI-assisted Vibe Coding pipeline (Figma Make + Antigravity/Claude Code), replacing outdated Play Store listing with a modern, polished experience.",
+      "Web Development: Delivered futuregulf.ae — bilingual AR/EN Next.js 15 website with RTL support, full SEO setup, and Google Search Console integration, deployed to UAE-based server.",
+      "Team & Process Leadership: Initiated and structured the company's social media operations — defined content pipeline, set technical requirements for tools used, and managed delivery using agile-style workflows."
     ]
   },
   {
@@ -287,32 +288,52 @@ export const experience = [
     location: "Cairo, Egypt",
     period: "Feb 2022 – Dec 2024",
     bullets: [
-      "Scalable Architecture: Developed high-performance Flutter applications utilizing Clean Architecture (MVVM/MVC) to ensure modularity and testability.",
-      "Data Management: Architected robust local-first experiences by integrating Hive for high-speed NoSQL caching alongside GetStorage and SQLite for complex relational data.",
-      "Advanced UI/UX: Built interactive mapping interfaces with Google Maps (custom markers, polylines) and enhanced user engagement with AI-driven personalization.",
-      "Monetization & Security: Managed end-to-end payment integration and secure API communication, supporting multiple currencies and localized payment methods."
+      "Scalable Architecture: Developed high-performance Flutter applications using Clean Architecture (MVVM/MVC) ensuring modularity and testability across e-commerce, IoT, healthcare, and rental domains.",
+      "Data Management: Architected local-first experiences integrating Hive for high-speed NoSQL caching alongside GetStorage and SQLite for complex relational data.",
+      "Advanced UI/UX: Built interactive mapping interfaces with Google Maps (custom markers, polylines) and AI-driven personalization features.",
+      "Monetization & Security: Managed end-to-end payment integration and secure API communication supporting multiple currencies and localized payment methods.",
+      "AI Fitness & Nutrition Platform: Developed a Flutter + Node.js app with AI engine detecting optimal diet per user, integrating MongoDB backend and real-time data sync."
     ]
   },
   {
-    role: "Head PR Volunteer",
+    role: "Social Media Marketing Specialist",
+    company: "Artedge",
+    location: "Egypt",
+    period: "Jan 2021 – Jan 2022",
+    bullets: [
+      "Managed social media presence and content strategy for a creative agency, growing audience engagement across platforms.",
+      "Produced and scheduled content, analyzed performance metrics, and optimized campaigns for reach and engagement."
+    ]
+  },
+  {
+    role: "Marketing Intern",
+    company: "Blue Business",
+    location: "Egypt",
+    period: "Jul 2020 – Sep 2020",
+    bullets: [
+      "Completed a 3-month marketing internship supporting campaign planning, content creation, and brand communication activities."
+    ]
+  },
+  {
+    role: "Head of PR",
     company: "Google Developer Student Club",
     location: "",
     period: "Sep 2022 – Sep 2023",
     bullets: [
-      "Led PR and outreach activities for student tech initiatives, growing community engagement across developer events and workshops."
+      "Led PR and outreach for student tech initiatives, growing community engagement across developer events and workshops."
     ]
   }
 ];
 
 export const skills = [
-  { category: "Languages & Frameworks", items: ["Dart", "Flutter"] },
-  { category: "Architecture & State Mgmt", items: ["MVVM", "MVC", "GetX", "Riverpod", "Bloc", "Cubit", "Clean Architecture"] },
-  { category: "APIs & Networking", items: ["REST", "Dio", "HTTP", "Retrofit", "WebSocket"] },
-  { category: "Storage", items: ["Hive", "SQLite", "GetStorage", "Shared Preferences"] },
-  { category: "Testing", items: ["Unit Testing", "flutter_test", "bloc_test", "Mockito", "TDD"] },
-  { category: "Tools & Services", items: ["Git", "GitHub", "Firebase", "Android Intents", "CI/CD", "Fastlane"] },
-  { category: "Integrations", items: ["Payment Integration", "Maps Integration", "Socket.IO"] },
-  { category: "Other", items: ["Clean Code", "OOP", "Localization", "Design Patterns", "Real-Time Systems"] }
+  { category: "Mobile", items: ["Flutter", "Dart", "App Store Publishing", "Play Store Publishing", "CI/CD", "Fastlane", "Codemagic", "GitHub Actions"] },
+  { category: "Architecture & State Mgmt", items: ["Clean Architecture", "MVVM", "MVC", "Bloc", "Cubit", "Riverpod", "GetX"] },
+  { category: "APIs & Real-Time", items: ["RESTful APIs", "Dio", "Retrofit", "WebSocket", "Socket.IO", "OCPP"] },
+  { category: "Storage", items: ["Hive", "SQLite", "GetStorage", "Shared Preferences", "Firebase"] },
+  { category: "Testing", items: ["flutter_test", "bloc_test", "Mockito", "TDD", "Unit Testing"] },
+  { category: "Web & Backend", items: ["Next.js 15", "React", "Tailwind CSS", "Node.js", "MongoDB"] },
+  { category: "Tools", items: ["Git", "GitHub", "Firebase", "Figma", "Android Studio", "Xcode", "Fastlane"] },
+  { category: "AI-Assisted Dev", items: ["Claude Code", "Cursor", "Antigravity", "Base44"] }
 ];
 
 export const softSkills = [
@@ -324,7 +345,7 @@ export const softSkills = [
 
 export const education = {
   degree: "Bachelor of Computer Science",
-  school: "Misr Higher Institute",
+  school: "Misr Higher Institute for Commerce and Computers",
   period: "2019 – 2023"
 };
 
