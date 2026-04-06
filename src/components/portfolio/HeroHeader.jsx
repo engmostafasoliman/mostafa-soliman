@@ -54,17 +54,19 @@ export default function HeroHeader({ profile }) {
             </div>
 
             <p className="mt-6 text-slate-400 leading-relaxed text-base md:text-lg">
-              Flutter Developer with{" "}
-              <span className="text-slate-200 font-medium">3+ years</span> of experience building and
-              shipping production apps to{" "}
-              <span className="text-indigo-300 font-medium">App Store &amp; Play Store</span> — from
-              EV charging infrastructure to AI nutrition platforms. Specialized in{" "}
-              <span className="text-indigo-300 font-medium">Bloc, Riverpod, GetX</span> &amp; Clean
-              Architecture for{" "}
-              <span className="text-slate-200 font-medium">scalable, high-performance</span> mobile
-              experiences. Actively integrates AI into daily development using{" "}
-              <span className="text-indigo-300 font-medium">Claude, Cursor, Base44 &amp; Antigravity</span>{" "}
-              to ship faster and smarter.
+              Mid-level Flutter Developer with{" "}
+              <span className="text-slate-200 font-medium">3+ years</span> delivering{" "}
+              <span className="text-slate-200 font-medium">9 apps</span> across production, including{" "}
+              <span className="text-indigo-300 font-medium">5 live on App Store &amp; Play Store</span>.
+              Specialized in{" "}
+              <span className="text-indigo-300 font-medium">Clean Architecture, Bloc/Cubit/Riverpod/GetX</span>,
+              real-time integrations{" "}
+              <span className="text-slate-200 font-medium">(WebSocket, Socket.IO, OCPP)</span>, and unit
+              testing. Built an embedded Flutter kiosk deployed across{" "}
+              <span className="text-slate-200 font-medium">20+ EV charging stations</span> in Abu Dhabi.
+              Actively integrates AI workflows —{" "}
+              <span className="text-indigo-300 font-medium">Claude Code, Cursor, Antigravity</span> — to
+              ship faster and smarter.
             </p>
 
             {/* Stats */}
