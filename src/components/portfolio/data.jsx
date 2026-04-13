@@ -350,6 +350,7 @@ export const education = {
 };
 
 export const certifications = [
+  { title: "Claude Code in Action (Anthropic)", url: "https://verify.skilljar.com/c/gg6jz8io2x7m" },
   { title: "The Complete Flutter Development Guide (IT Share)", url: "https://drive.google.com/file/d/1gUb_IDYUgKqZ-e6DFYrJxMLyyaNytBhc/view?usp=sharing" },
   { title: "Flutter Course E-commerce Full App Getx & Firebase MVC (Waled Asroo)", url: "https://drive.google.com/file/d/1MFWV-wTgN6rhZGzP6e18JG2I3atZagFX/view?usp=sharing" },
   { title: "Flutter Advanced Course Bloc and MVVM Pattern [Arabic] (Tharwat Samy)", url: "https://drive.google.com/file/d/1mO8VWhCqptORhAaYDIwQ12yzuBtyOeKx/view?usp=sharing" },
