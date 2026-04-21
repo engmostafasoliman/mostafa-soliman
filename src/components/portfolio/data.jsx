@@ -45,6 +45,35 @@ export const projects = [
     image: "/Portfolio/images/fgc.jpg"
   },
   {
+    id: "western-beach",
+    title: "Western Beach General Contracting",
+    summary: "Bilingual AR/EN website with RTL support, project gallery, and full SEO for a UAE general contracting company.",
+    description: "The official digital home of Western Beach General Contracting — a trusted UAE construction company delivering building, landscaping, and infrastructure projects across the UAE. Built as a blazing-fast static site using Next.js 15 App Router with full Arabic/English bilingual support, RTL layout, and an interactive project and services gallery.",
+    problem: "Western Beach General Contracting lacked a modern web presence to showcase their projects and services, making it difficult to reach potential clients digitally across the UAE.",
+    solution: "A fully static Next.js 15 site with Arabic/English i18n, RTL support, and structured SEO — giving the brand a fast, discoverable, and professional web presence serving the UAE market.",
+    challenges: [
+      "Implementing seamless RTL/LTR layout switching for full Arabic/English bilingual experience",
+      "Optimizing performance for a fully static export deployed on cPanel (no Node.js server)",
+      "Building an interactive project and services gallery for a construction portfolio",
+      "Implementing complete SEO stack: JSON-LD LocalBusiness schema, hreflang, sitemap, and canonical URLs"
+    ],
+    achievements: [
+      "Live at westernbeach.ae — fully static Next.js 15 site with App Router",
+      "Full Arabic/English bilingual experience with RTL support",
+      "Interactive project gallery showcasing construction and infrastructure work",
+      "Production-grade SEO: JSON-LD schema, hreflang, sitemap, canonical URLs",
+      "Fully responsive across mobile, tablet, and desktop"
+    ],
+    technologies: ["Next.js 15", "React", "SEO", "Tailwind CSS", "Claude Code"],
+    links: {
+      appStore: "",
+      playStore: "",
+      github: "",
+      website: "https://westernbeach.ae/en/"
+    },
+    image: "/Portfolio/images/westernbeach.jpg"
+  },
+  {
     id: "quarak-qr",
     title: "Quarak — QR Code App",
     summary: "A full redesign and rebuild of a QR code app using Vibe Coding — from outdated MVP to AI-crafted production release on Google Play.",
