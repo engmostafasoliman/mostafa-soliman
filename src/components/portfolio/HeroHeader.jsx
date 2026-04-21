@@ -56,7 +56,7 @@ export default function HeroHeader({ profile }) {
             <p className="mt-6 text-slate-400 leading-relaxed text-base md:text-lg">
               Mid-level Flutter Developer with{" "}
               <span className="text-slate-200 font-medium">3+ years</span> delivering{" "}
-              <span className="text-slate-200 font-medium">9 apps</span> across production, including{" "}
+              <span className="text-slate-200 font-medium">10 apps</span> across production, including{" "}
               <span className="text-indigo-300 font-medium">5 live on App Store &amp; Play Store</span>.
               Specialized in{" "}
               <span className="text-indigo-300 font-medium">Clean Architecture, Bloc/Cubit/Riverpod/GetX</span>,
