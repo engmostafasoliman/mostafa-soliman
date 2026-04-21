@@ -74,33 +74,6 @@ export const projects = [
     image: "/Portfolio/images/westernbeach.jpg"
   },
   {
-    id: "quarak-qr",
-    title: "Quarak — QR Code App",
-    summary: "A full redesign and rebuild of a QR code app using Vibe Coding — from outdated MVP to AI-crafted production release on Google Play.",
-    description: "Quarak started as a basic QR code utility on the Play Store — functional but visually outdated. I rebuilt it from scratch using Vibe Coding: brainstorming UI concepts with ChatGPT, generating designs in Figma Make from AI prompts, then feeding screenshots and URLs into the Antigravity AI agent (Claude Sonnet). By 'explaining' the full concept to the agent and setting strict rules and architecture guidelines upfront, the agent transformed silent Figma designs into a real, working Flutter app at remarkable speed. The result replaced the original store listing entirely.",
-    problem: "The original QR app was outdated, lifeless, and lacked the features and polish expected of a modern utility app — needing a full redesign and rebuild.",
-    solution: "Used a structured Vibe Coding workflow: ChatGPT for concept brainstorming → Figma Make for AI-generated UI → Antigravity (Claude Sonnet) for full app generation with enforced architecture rules to keep the output maintainable and production-ready.",
-    challenges: [
-      "Crafting effective AI prompts that produced usable, consistent Figma designs",
-      "Communicating the full app concept to an AI agent in a structured, programmer-like way",
-      "Setting up rules and architecture constraints so the generated code remained maintainable",
-      "Validating and refining AI-generated code to match design intent exactly"
-    ],
-    achievements: [
-      "Rebuilt and shipped a production app to Google Play entirely via Vibe Coding",
-      "Replaced the original store listing with a modern, polished redesign",
-      "Demonstrated a full AI-assisted workflow: ChatGPT → Figma Make → Antigravity → Play Store",
-      "Proved that structured AI prompting with clear rules produces maintainable, extendable code"
-    ],
-    technologies: ["Flutter", "Figma", "Antigravity", "Claude Code"],
-    links: {
-      appStore: "",
-      playStore: "https://play.google.com/store/apps/details?id=com.qrapp.qrapp",
-      github: ""
-    },
-    image: "/Portfolio/images/quarak.jpg"
-  },
-  {
     id: "easy-touch-ev",
     title: "Easy Touch EV Charger",
     summary: "Locate, manage, and pay for EV charging sessions with real-time map integration and availability.",
@@ -127,32 +100,6 @@ export const projects = [
       github: ""
     },
     image: "/Portfolio/images/ev-charger-BG.png"
-  },
-  {
-    id: "whiteboard-app",
-    title: "WhiteBoard App",
-    summary: "Freehand drawing with smooth gestures using CustomPainter and Riverpod in a clean MVVM setup.",
-    description: "A high-performance digital whiteboard app built from scratch using Flutter's CustomPainter and Canvas API. Designed for artists, students, and professionals who need a fluid, responsive drawing experience on mobile — with full persistence so work is never lost.",
-    problem: "Most drawing apps suffer from noticeable input lag and jittery strokes, breaking the natural flow of handwriting and illustration on touch screens.",
-    solution: "Custom rendering pipeline with optimized path-simplification algorithms achieving 60 FPS. Riverpod manages state with minimal rebuilds, while Hive serializes and persists complex vector paths locally for near-instant save and load.",
-    challenges: [
-      "Achieving 60 FPS rendering on complex multi-path canvases",
-      "Smoothing touch input to eliminate jitter without introducing perceptible delay",
-      "Efficiently serializing and deserializing complex vector path data with Hive",
-      "Integrating Android Intents for external file and image sharing"
-    ],
-    achievements: [
-      "Low-latency path rendering with optimized gesture detection",
-      "Highly responsive and smooth drawing experience at 60 FPS",
-      "Persistent canvas — drawings survive app restarts with near-instant load times"
-    ],
-    technologies: ["Flutter", "Riverpod", "CustomPainter", "Hive", "MVVM", "Android Intent"],
-    links: {
-      appStore: "",
-      playStore: "",
-      github: ""
-    },
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/22512d00c_image.png"
   },
   {
     id: "innvii-rent",
@@ -209,33 +156,6 @@ export const projects = [
     image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/08c7a77a3_Screenshot2026-01-16at123029PM.png"
   },
   {
-    id: "smart-green-house",
-    title: "Smart Green House",
-    summary: "IoT app to monitor and control greenhouse conditions with real-time synchronization.",
-    description: "A real-time IoT monitoring and control application for smart greenhouse management. Farmers can track critical environmental conditions — temperature, humidity, and soil moisture — and trigger actuators remotely from their phone, reducing crop loss from delayed interventions.",
-    problem: "Greenhouse operators lack real-time visibility and remote control over environmental conditions, leading to crop damage from manual, delayed responses to temperature or humidity changes.",
-    solution: "Bidirectional real-time communication via Socket.IO delivers live sensor readings and accepts remote control commands instantly. Bloc state management ensures predictable, testable data flow, and a clean MVVM structure separates UI from business logic.",
-    challenges: [
-      "Maintaining stable Socket.IO connections with automatic reconnection on network drops",
-      "Handling high-frequency sensor data streams without causing UI jank",
-      "Designing an intuitive control dashboard for non-technical farming users",
-      "Graceful offline degradation with clear status indicators when connectivity is lost"
-    ],
-    achievements: [
-      "Real-time data sync using Socket.IO with sub-second latency",
-      "Instant remote control of greenhouse actuators with minimal latency",
-      "Scalable sensor dashboard supporting multiple zones and device types"
-    ],
-    technologies: ["Flutter", "Bloc", "HTTP", "MVVM", "Socket.IO", "Real-time"],
-    links: {
-      appStore: "",
-      playStore: "",
-      github: "",
-      pdf: "https://drive.google.com/file/d/1Z97AaYgC5hwAyPkYjgzIahvFfXNLPTEs/view?usp=sharing"
-    },
-    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/4aabe7a06_WhiteGreenMobileMockupPhotoCollageBeautyPinterestPin1.png"
-  },
-  {
     id: "barber-app",
     title: "Barber App",
     summary: "Schedule appointments, view slots, and pay through a clean MVC architecture.",
@@ -266,6 +186,86 @@ export const projects = [
     images: [
       "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/4a0203744_BlueModernMobileApplicationPresentation.jpg"
     ]
+  },
+  {
+    id: "smart-green-house",
+    title: "Smart Green House",
+    summary: "IoT app to monitor and control greenhouse conditions with real-time synchronization.",
+    description: "A real-time IoT monitoring and control application for smart greenhouse management. Farmers can track critical environmental conditions — temperature, humidity, and soil moisture — and trigger actuators remotely from their phone, reducing crop loss from delayed interventions.",
+    problem: "Greenhouse operators lack real-time visibility and remote control over environmental conditions, leading to crop damage from manual, delayed responses to temperature or humidity changes.",
+    solution: "Bidirectional real-time communication via Socket.IO delivers live sensor readings and accepts remote control commands instantly. Bloc state management ensures predictable, testable data flow, and a clean MVVM structure separates UI from business logic.",
+    challenges: [
+      "Maintaining stable Socket.IO connections with automatic reconnection on network drops",
+      "Handling high-frequency sensor data streams without causing UI jank",
+      "Designing an intuitive control dashboard for non-technical farming users",
+      "Graceful offline degradation with clear status indicators when connectivity is lost"
+    ],
+    achievements: [
+      "Real-time data sync using Socket.IO with sub-second latency",
+      "Instant remote control of greenhouse actuators with minimal latency",
+      "Scalable sensor dashboard supporting multiple zones and device types"
+    ],
+    technologies: ["Flutter", "Bloc", "HTTP", "MVVM", "Socket.IO", "Real-time"],
+    links: {
+      appStore: "",
+      playStore: "",
+      github: "",
+      pdf: "https://drive.google.com/file/d/1Z97AaYgC5hwAyPkYjgzIahvFfXNLPTEs/view?usp=sharing"
+    },
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/4aabe7a06_WhiteGreenMobileMockupPhotoCollageBeautyPinterestPin1.png"
+  },
+  {
+    id: "quarak-qr",
+    title: "Quarak — QR Code App",
+    summary: "A full redesign and rebuild of a QR code app using Vibe Coding — from outdated MVP to AI-crafted production release on Google Play.",
+    description: "Quarak started as a basic QR code utility on the Play Store — functional but visually outdated. I rebuilt it from scratch using Vibe Coding: brainstorming UI concepts with ChatGPT, generating designs in Figma Make from AI prompts, then feeding screenshots and URLs into the Antigravity AI agent (Claude Sonnet). By 'explaining' the full concept to the agent and setting strict rules and architecture guidelines upfront, the agent transformed silent Figma designs into a real, working Flutter app at remarkable speed. The result replaced the original store listing entirely.",
+    problem: "The original QR app was outdated, lifeless, and lacked the features and polish expected of a modern utility app — needing a full redesign and rebuild.",
+    solution: "Used a structured Vibe Coding workflow: ChatGPT for concept brainstorming → Figma Make for AI-generated UI → Antigravity (Claude Sonnet) for full app generation with enforced architecture rules to keep the output maintainable and production-ready.",
+    challenges: [
+      "Crafting effective AI prompts that produced usable, consistent Figma designs",
+      "Communicating the full app concept to an AI agent in a structured, programmer-like way",
+      "Setting up rules and architecture constraints so the generated code remained maintainable",
+      "Validating and refining AI-generated code to match design intent exactly"
+    ],
+    achievements: [
+      "Rebuilt and shipped a production app to Google Play entirely via Vibe Coding",
+      "Replaced the original store listing with a modern, polished redesign",
+      "Demonstrated a full AI-assisted workflow: ChatGPT → Figma Make → Antigravity → Play Store",
+      "Proved that structured AI prompting with clear rules produces maintainable, extendable code"
+    ],
+    technologies: ["Flutter", "Figma", "Antigravity", "Claude Code"],
+    links: {
+      appStore: "",
+      playStore: "https://play.google.com/store/apps/details?id=com.qrapp.qrapp",
+      github: ""
+    },
+    image: "/Portfolio/images/quarak.jpg"
+  },
+  {
+    id: "whiteboard-app",
+    title: "WhiteBoard App",
+    summary: "Freehand drawing with smooth gestures using CustomPainter and Riverpod in a clean MVVM setup.",
+    description: "A high-performance digital whiteboard app built from scratch using Flutter's CustomPainter and Canvas API. Designed for artists, students, and professionals who need a fluid, responsive drawing experience on mobile — with full persistence so work is never lost.",
+    problem: "Most drawing apps suffer from noticeable input lag and jittery strokes, breaking the natural flow of handwriting and illustration on touch screens.",
+    solution: "Custom rendering pipeline with optimized path-simplification algorithms achieving 60 FPS. Riverpod manages state with minimal rebuilds, while Hive serializes and persists complex vector paths locally for near-instant save and load.",
+    challenges: [
+      "Achieving 60 FPS rendering on complex multi-path canvases",
+      "Smoothing touch input to eliminate jitter without introducing perceptible delay",
+      "Efficiently serializing and deserializing complex vector path data with Hive",
+      "Integrating Android Intents for external file and image sharing"
+    ],
+    achievements: [
+      "Low-latency path rendering with optimized gesture detection",
+      "Highly responsive and smooth drawing experience at 60 FPS",
+      "Persistent canvas — drawings survive app restarts with near-instant load times"
+    ],
+    technologies: ["Flutter", "Riverpod", "CustomPainter", "Hive", "MVVM", "Android Intent"],
+    links: {
+      appStore: "",
+      playStore: "",
+      github: ""
+    },
+    image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6968a73708cd577f8038bda8/22512d00c_image.png"
   },
   {
     id: "asroo-ecommerce",
@@ -306,8 +306,7 @@ export const experience = [
       "EV Charging Platform (Easy Touch): Shipped production app on App Store & Play Store — EV drivers locate chargers via Google Maps, manage live sessions over WebSocket/OCPP, and pay securely. Covered Cubit state transitions and OCPP handlers with unit tests using Mockito and bloc_test.",
       "Embedded Android Deployment: Led Flutter interface development for 20+ EV charging kiosks across Abu Dhabi, ensuring 24/7 reliability on custom hardware with real-time payment webhooks.",
       "WhiteBoard App: Built high-performance digital whiteboard using CustomPainter and Canvas API at 60 FPS, with Riverpod state management and Hive-powered persistent vector path storage for near-instant save and load.",
-      "Quarak QR Code App: Rebuilt legacy QR app from scratch using AI-assisted Vibe Coding pipeline (Figma Make + Antigravity/Claude Code), replacing outdated Play Store listing with a modern, polished experience.",
-      "Web Development: Delivered futuregulf.ae — bilingual AR/EN Next.js 15 website with RTL support, full SEO setup, and Google Search Console integration, deployed to UAE-based server.",
+      "Web Development: Delivered futuregulf.ae and westernbeach.ae — bilingual AR/EN Next.js 15 websites with RTL support, full SEO setup, and Google Search Console integration, deployed to UAE-based servers.",
       "Team & Process Leadership: Initiated and structured the company's social media operations — defined content pipeline, set technical requirements for tools used, and managed delivery using agile-style workflows."
     ]
   },
@@ -322,25 +321,6 @@ export const experience = [
       "Advanced UI/UX: Built interactive mapping interfaces with Google Maps (custom markers, polylines) and AI-driven personalization features.",
       "Monetization & Security: Managed end-to-end payment integration and secure API communication supporting multiple currencies and localized payment methods.",
       "AI Fitness & Nutrition Platform: Developed a Flutter + Node.js app with AI engine detecting optimal diet per user, integrating MongoDB backend and real-time data sync."
-    ]
-  },
-  {
-    role: "Social Media Marketing Specialist",
-    company: "Artedge",
-    location: "Egypt",
-    period: "Jan 2021 – Jan 2022",
-    bullets: [
-      "Managed social media presence and content strategy for a creative agency, growing audience engagement across platforms.",
-      "Produced and scheduled content, analyzed performance metrics, and optimized campaigns for reach and engagement."
-    ]
-  },
-  {
-    role: "Marketing Intern",
-    company: "Blue Business",
-    location: "Egypt",
-    period: "Jul 2020 – Sep 2020",
-    bullets: [
-      "Completed a 3-month marketing internship supporting campaign planning, content creation, and brand communication activities."
     ]
   },
   {
@@ -380,9 +360,9 @@ export const education = {
 
 export const certifications = [
   { title: "Claude Code in Action (Anthropic)", url: "https://verify.skilljar.com/c/gg6jz8io2x7m" },
+  { title: "Deep Dive Into Clean Architecture in Flutter (Tharwat Samy)", url: "https://drive.google.com/file/d/1mO8VWhCqptORhAaYDIwQ12yzuBtyOeKx/view?usp=sharing" },
   { title: "The Complete Flutter Development Guide (IT Share)", url: "https://drive.google.com/file/d/1gUb_IDYUgKqZ-e6DFYrJxMLyyaNytBhc/view?usp=sharing" },
   { title: "Flutter Course E-commerce Full App Getx & Firebase MVC (Waled Asroo)", url: "https://drive.google.com/file/d/1MFWV-wTgN6rhZGzP6e18JG2I3atZagFX/view?usp=sharing" },
-  { title: "Flutter Advanced Course Bloc and MVVM Pattern [Arabic] (Tharwat Samy)", url: "https://drive.google.com/file/d/1mO8VWhCqptORhAaYDIwQ12yzuBtyOeKx/view?usp=sharing" },
   { title: "Flutter Advanced Course Payment [Arabic] (Tharwat Samy)", url: "" },
   { title: "Flutter Advanced Course CI/CD & Retrofit [Arabic] (Omar Ahmed)", url: "" }
 ];
